@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desertsjeremy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Desserts</h1>
+    <div class="card">
+      <div class="waffle">
+        <img src="image-waffle-mobile.jpg" alt="waffle image" />
+        <button id="add">
+          <img src="icon-add-to-cart.svg" alt="" />
+          <p>Add to cart</p>
+        </button>
+        <h3>Waffle</h3>
+        <p class="description">Waffle with berries</p>
+        <p class="price">$6.50</p>
+      </div>
+
+      <div class="vanilla-bean">
+        <img src="image-creme-brulee-mobile.jpg" alt="creme brulee" />
+        <button id="add">
+          <img src="icon-decrement-quantity.svg" alt="" />
+          <p>4</p>
+          <img src="icon-increment-quantity.svg" alt="" />
+        </button>
+        <h3>Creme Brulee</h3>
+        <p class="description">Bean Creme Brulee</p>
+        <p class="price">$7.00</p>
+      </div>
+
+      <div class="macaron">
+        <img src="image-macaron-mobile.jpg" alt="macaron" />
+        <button id="add">
+          <img src="icon-add-to-cart.svg" alt="" />
+          <p>Add to Cart</p>
+        </button>
+        <h3>Macoron</h3>
+        <p class="description">Macoron mix of five</p>
+        <p class="price">$8.00</p>
+      </div>
+
+      <div class="tiramisu">
+        <img src="image-tiramisu-mobile.jpg" alt="tiramisu" />
+        <button id="add">
+          <img src="icon-decrement-quantity.svg" alt="" />
+          <p>1</p>
+          <img src="icon-increment-quantity.svg" alt="" />
+        </button>
+        <h3>Tiramisu</h3>
+        <p class="description">Classic Tiramisu</p>
+        <p class="price">$5.50</p>
+      </div>
+
+      <div class="baklava">
+        <img src="image-baklava-mobile.jpg" alt="baklava" />
+        <button id="add">
+          <img src="icon-add-to-cart.svg" alt="" />
+          <p>Add to Cart</p>
+        </button>
+        <h3>Baklava</h3>
+        <p class="description">Pistachio Baklava</p>
+        <p class="price">$4.00</p>
+      </div>
+
+      <div class="pie">
+        <img src="image-meringue-mobile.jpg" alt="lemon meringue" />
+        <button id="add">
+          <img src="icon-add-to-cart.svg" alt="" />
+          <p>Add to Cart</p>
+        </button>
+        <h3>Pie</h3>
+        <p class="description">Lemon Meringue Pie</p>
+        <p class="price">$5.00</p>
+      </div>
+
+      <div class="cake">
+        <img src="image-cake-mobile.jpg" alt="cake" />
+        <button id="add">
+          <img src="icon-add-to-cart.svg" alt="" />
+          <p>Add to Cart</p>
+        </button>
+        <h3>Cake</h3>
+        <p class="description">Red Velvet Cake</p>
+        <p class="price">$4.50</p>
+      </div>
+
+      <div class="brownie">
+        <img src="image-brownie-mobile.jpg" alt="brownie" />
+        <button id="add">
+          <img src="icon-add-to-cart.svg" alt="" />
+          <p>Add to Cart</p>
+        </button>
+        <h3>Brownie</h3>
+        <p class="description">Salted Caramel Brownie</p>
+        <p class="price">$5.50</p>
+      </div>
+
+      <div class="panna-cotta">
+        <img src="image-panna-cotta-mobile.jpg" alt="panna-cotta" />
+        <button id="add">
+          <img src="icon-decrement-quantity.svg" alt="" />
+          <p>2</p>
+          <img src="icon-increment-quantity.svg" alt="" />
+        </button>
+        <h3>Panna Cotta</h3>
+        <p class="description">Vanilla Panna Cotta</p>
+        <p class="price">$6.50</p>
+      </div>
+
+      <div class="checkout">
+        <h2>Your Cart(7)</h2>
+        <div id="order1">
+          <div class="right">
+            <p>Classic Tiramisu</p>
+            <div class="calculations">
+              <p class="amount">1x</p>
+              <p class="initial">@ $5.50</p>
+              <p class="final">$5.50</p>
+            </div>
+          </div>
+          <div class="remove">
+            <img src="icon-remove-item.svg" alt="" />
+          </div>
+        </div>
+
+        <div id="order2">
+          <div class="right">
+            <p>Vanilla Bean Creme Brulee</p>
+            <div class="calculations">
+              <p class="amount">4x</p>
+              <p class="initial">@ $7.00</p>
+              <p class="final">$28.00</p>
+            </div>
+          </div>
+          <div class="remove">
+            <img src="icon-remove-item.svg" alt="" />
+          </div>
+        </div>
+
+        <div id="order3">
+          <div class="right">
+            <p>Vanilla Panna Cotta</p>
+            <div class="calculations">
+              <p class="amount">2x</p>
+              <p class="initial">@ $6.50</p>
+              <p class="final">$13.00</p>
+            </div>
+          </div>
+          <div class="remove">
+            <img src="icon-remove-item.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="total">
+          <div id="text">
+            <p>Order Total</p>
+          </div>
+          <div class="total-amount">
+            <p>$46.50</p>
+          </div>
+        </div>
+
+        <div class="disclaimer">
+          <p><img src="icon-carbon-neutral.svg" alt="" /></p>
+          <p>This is a carbon-neutral delivery</p>
+        </div>
+
+        <div class="confirm">
+          <botton>Confirm Order</botton>
+        </div>
+      </div>
+      <div class="cart">
+        <h2>Your Cart</h2>
+        <div>
+          <img src="illustration-empty-cart.svg" alt="" />
+          <p>Your added items will appear here</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

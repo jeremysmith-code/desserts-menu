@@ -1,0 +1,304 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+div.card {
+  display: grid;
+  justify-content: center;
+}
+body {
+  background-color: #fcf8f5;
+  padding: 20px;
+  max-height: 100vh;
+  font-family: "Rubik $ Karla", sans-serif;
+}
+
+.waffle {
+  padding: 20px;
+  position: relative;
+}
+
+.vanilla-bean {
+  position: relative;
+}
+
+.tiramisu {
+  position: relative;
+}
+
+.brownie {
+  position: relative;
+}
+
+.cake {
+  position: relative;
+}
+
+.macaron {
+  position: relative;
+}
+
+.pie {
+  position: relative;
+}
+
+.panna-cotta {
+  position: relative;
+}
+.baklava {
+  position: relative;
+}
+.waffle img:first-child,
+.vanilla-bean img:first-child,
+.macaron img:first-child,
+.tiramisu img:first-child,
+.baklava img:first-child,
+.pie img:first-child,
+.cake img:first-child,
+.brownie img:first-child,
+.panna-cotta img:first-child {
+  width: 100%;
+  border-radius: 20px;
+  border: 3px solid gray;
+}
+
+button#add {
+  padding-inline: 30px;
+  padding-block: 15px;
+  border-radius: 40px;
+  margin-bottom: 30px;
+  border: 2px solid gray;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.waffle button#add {
+  position: absolute;
+  left: 240px;
+  top: 440px;
+}
+
+.vanilla-bean button#add {
+  position: absolute;
+  left: 240px;
+  top: 440px;
+}
+
+.macaron button#add {
+  position: absolute;
+  left: 240px;
+  top: 440px;
+}
+
+.baklava button#add {
+  position: absolute;
+  left: 240px;
+  top: 440px;
+}
+.pie button#add {
+  position: absolute;
+  left: 240px;
+  top: 440px;
+}
+
+.cake button#add {
+  position: absolute;
+  left: 240px;
+  top: 440px;
+}
+
+.tiramisu button#add {
+  position: absolute;
+  left: 240px;
+  top: 440px;
+}
+
+.brownie button#add {
+  position: absolute;
+  left: 240px;
+  top: 440px;
+}
+
+.panna-cotta button#add {
+  position: absolute;
+  left: 240px;
+  top: 440px;
+}
+h3 {
+  font-size: 20px;
+  opacity: 0.5;
+  font-weight: lighter;
+  margin-top: 40px;
+}
+
+p.description {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+p.price {
+  color: #c5694a;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.tiramisu button#add,
+.vanilla-bean button#add,
+.panna-cotta button#add {
+  background-color: #c93b0c;
+  border: 2px solid#c93b0c;
+  color: white;
+}
+
+button#add img {
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+button#add p {
+  font-size: 20px;
+}
+
+.checkout {
+  background-color: white;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+h2 {
+  color: #c93b0c;
+}
+
+div#order1,
+div#order2,
+div#order3 {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+div.calculations {
+  display: flex;
+  gap: 25px;
+}
+
+.amount {
+  color: #c93b0c;
+}
+
+.initial {
+  opacity: 0.5;
+}
+
+.final {
+  opacity: 0.8;
+}
+
+div.remove {
+  display: flex;
+  justify-content: flex-end;
+}
+
+div.total {
+  padding: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+
+div.total .total-amount {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.disclaimer {
+  background-color: #fbf6f4;
+  margin-inline: 90px;
+  padding: 25px;
+  border-radius: 10px;
+  margin-block: 30px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+div.confirm {
+  display: flex;
+  justify-content: center;
+  background-color: #c93b0c;
+  color: white;
+  padding: 25px;
+  margin-inline: 100px;
+  margin-block: 35px;
+  border-radius: 40px;
+}
+
+.cart {
+  display: none;
+  background-color: white;
+  padding: 20px;
+  margin: 30px;
+  font-size: 25px;
+}
+
+.cart div {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+}
+@media screen and (min-width: 1024px) {
+  div.card {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .checkout {
+    display: none;
+  }
+
+  .waffle {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+
+  .vanilla-bean {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+
+  .macaron {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+
+  .cake {
+    grid-column: 1/2;
+    grid-row: 3;
+  }
+
+  .brownie {
+    grid-column: 2/3;
+    grid-row: 3;
+  }
+
+  .panna-cotta {
+    grid-column: 3/4;
+    grid-row: 3;
+  }
+
+  .cart {
+    display: inline;
+    grid-column: 4/5;
+    grid-row: 1;
+  }
+}
