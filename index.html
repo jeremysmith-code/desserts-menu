@@ -5,107 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Desertsjeremy</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>Desserts</h1>
     <div class="card">
       <div class="waffle">
-        <img src="image-waffle-mobile.jpg" alt="waffle image" />
-        <button id="add">
-          <img src="icon-add-to-cart.svg" alt="" />
-          <p>Add to cart</p>
-        </button>
+        <div>
+          <picture>
+            <source media="(width < 757px)" srcset="image-waffle-mobile.jpg" />
+            <source
+              media="(width >= 757px)"
+              srcset="image-waffle-desktop.jpg"
+            />
+
+            <img src="image-waffle-mobile.jpg" alt="waffle image" />
+          </picture>
+          <button id="add">
+            <img src="icon-add-to-cart.svg" alt="" />
+            <p>Add to cart</p>
+          </button>
+        </div>
         <h3>Waffle</h3>
         <p class="description">Waffle with berries</p>
         <p class="price">$6.50</p>
       </div>
 
       <div class="vanilla-bean">
-        <img src="image-creme-brulee-mobile.jpg" alt="creme brulee" />
-        <button id="add">
-          <img src="icon-decrement-quantity.svg" alt="" />
-          <p>4</p>
-          <img src="icon-increment-quantity.svg" alt="" />
-        </button>
+        <div>
+          <picture>
+            <source
+              media="(width < 757px)"
+              srcset="image-creme-brulee-mobile.jpg"
+            />
+            <source
+              media="(width >= 757px)"
+              srcset="image-creme-brulee-desktop.jpg"
+            />
+
+            <img src="image-creme-brulee-mobile.jpg" alt="creme brulee" />
+          </picture>
+          <button id="add">
+            <img src="icon-decrement-quantity.svg" alt="" />
+            <p>4</p>
+            <img src="icon-increment-quantity.svg" alt="" />
+          </button>
+        </div>
         <h3>Creme Brulee</h3>
         <p class="description">Bean Creme Brulee</p>
         <p class="price">$7.00</p>
       </div>
 
       <div class="macaron">
-        <img src="image-macaron-mobile.jpg" alt="macaron" />
-        <button id="add">
-          <img src="icon-add-to-cart.svg" alt="" />
-          <p>Add to Cart</p>
-        </button>
+        <div>
+          <picture>
+            <source media="(width < 757px)" srcset="image-macaron-mobile.jpg" />
+            <source
+              media="(width >= 757px)"
+              srcset="image-macaron-desktop.jpg"
+            />
+            <img src="image-macaron-mobile.jpg" alt="macaron" />
+          </picture>
+          <button id="add">
+            <img src="icon-add-to-cart.svg" alt="" />
+            <p>Add to Cart</p>
+          </button>
+        </div>
         <h3>Macoron</h3>
         <p class="description">Macoron mix of five</p>
         <p class="price">$8.00</p>
       </div>
 
       <div class="tiramisu">
-        <img src="image-tiramisu-mobile.jpg" alt="tiramisu" />
-        <button id="add">
-          <img src="icon-decrement-quantity.svg" alt="" />
-          <p>1</p>
-          <img src="icon-increment-quantity.svg" alt="" />
-        </button>
+        <div>
+          <picture>
+            <source
+              media="(width < 757px)"
+              srcset="image-tiramisu-mobile.jpg"
+            />
+            <source
+              media="(width >= 757px)"
+              srcset="image-tiramisu-desktop.jpg"
+            />
+            <img src="image-tiramisu-mobile.jpg" alt="tiramisu" />
+          </picture>
+          <button id="add">
+            <img src="icon-decrement-quantity.svg" alt="" />
+            <p>1</p>
+            <img src="icon-increment-quantity.svg" alt="" />
+          </button>
+        </div>
         <h3>Tiramisu</h3>
         <p class="description">Classic Tiramisu</p>
         <p class="price">$5.50</p>
       </div>
 
       <div class="baklava">
-        <img src="image-baklava-mobile.jpg" alt="baklava" />
-        <button id="add">
-          <img src="icon-add-to-cart.svg" alt="" />
-          <p>Add to Cart</p>
-        </button>
+        <div>
+          <picture>
+            <source media="(width < 757px)" srcset="image-baklava-mobile.jpg" />
+            <source
+              media="(width >= 757px)"
+              srcset="image-baklava-desktop.jpg"
+            />
+            <img src="image-baklava-mobile.jpg" alt="baklava" />
+          </picture>
+          <button id="add">
+            <img src="icon-add-to-cart.svg" alt="" />
+            <p>Add to Cart</p>
+          </button>
+        </div>
         <h3>Baklava</h3>
         <p class="description">Pistachio Baklava</p>
         <p class="price">$4.00</p>
       </div>
 
       <div class="pie">
-        <img src="image-meringue-mobile.jpg" alt="lemon meringue" />
-        <button id="add">
-          <img src="icon-add-to-cart.svg" alt="" />
-          <p>Add to Cart</p>
-        </button>
+        <div>
+          <picture>
+            <source
+              media="(width < 757px)"
+              srcset="image-meringue-mobile.jpg"
+            />
+            <source
+              media="(width >= 757px)"
+              srcset="image-meringue-desktop.jpg"
+            />
+            <img src="image-meringue-mobile.jpg" alt="lemon meringue" />
+          </picture>
+          <button id="add">
+            <img src="icon-add-to-cart.svg" alt="" />
+            <p>Add to Cart</p>
+          </button>
+        </div>
         <h3>Pie</h3>
         <p class="description">Lemon Meringue Pie</p>
         <p class="price">$5.00</p>
       </div>
 
       <div class="cake">
-        <img src="image-cake-mobile.jpg" alt="cake" />
-        <button id="add">
-          <img src="icon-add-to-cart.svg" alt="" />
-          <p>Add to Cart</p>
-        </button>
+        <div>
+          <picture>
+            <source media="(width < 757px)" srcset="image-cake.jpg" />
+            <source media="(width >= 757px)" srcset="image-cake-desktop.jpg" />
+            <img src="image-cake-mobile.jpg" alt="cake" />
+          </picture>
+          <button id="add">
+            <img src="icon-add-to-cart.svg" alt="" />
+            <p>Add to Cart</p>
+          </button>
+        </div>
         <h3>Cake</h3>
         <p class="description">Red Velvet Cake</p>
         <p class="price">$4.50</p>
       </div>
 
       <div class="brownie">
-        <img src="image-brownie-mobile.jpg" alt="brownie" />
-        <button id="add">
-          <img src="icon-add-to-cart.svg" alt="" />
-          <p>Add to Cart</p>
-        </button>
+        <div>
+          <picture>
+            <source media="(width < 757px)" srcset="image-brownie-mobile.jpg" />
+            <source
+              media="(width >= 757px)"
+              srcset="image-brownie-desktop.jpg"
+            />
+            <img src="image-brownie-mobile.jpg" alt="brownie" />
+          </picture>
+          <button id="add">
+            <img src="icon-add-to-cart.svg" alt="" />
+            <p>Add to Cart</p>
+          </button>
+        </div>
         <h3>Brownie</h3>
         <p class="description">Salted Caramel Brownie</p>
         <p class="price">$5.50</p>
       </div>
 
       <div class="panna-cotta">
-        <img src="image-panna-cotta-mobile.jpg" alt="panna-cotta" />
-        <button id="add">
-          <img src="icon-decrement-quantity.svg" alt="" />
-          <p>2</p>
-          <img src="icon-increment-quantity.svg" alt="" />
-        </button>
+        <div>
+          <picture>
+            <source
+              media="(width < 757px)"
+              srcset="image-panna-cotta-mobile.jpg"
+            />
+            <source
+              media="(width >= 757px)"
+              srcset="image-panna-cotta-desktop.jpg"
+            />
+            <img src="image-panna-cotta-mobile.jpg" alt="panna-cotta" />
+          </picture>
+          <button id="add">
+            <img src="icon-decrement-quantity.svg" alt="" />
+            <p>2</p>
+            <img src="icon-increment-quantity.svg" alt="" />
+          </button>
+        </div>
         <h3>Panna Cotta</h3>
         <p class="description">Vanilla Panna Cotta</p>
         <p class="price">$6.50</p>

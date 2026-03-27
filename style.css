@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 55px;
+  padding-top: 30px;
+}
+
 div.card {
   display: grid;
   justify-content: center;
@@ -12,42 +17,42 @@ body {
   background-color: #fcf8f5;
   padding: 20px;
   max-height: 100vh;
-  font-family: "Rubik $ Karla", sans-serif;
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
 }
 
-.waffle {
-  padding: 20px;
+.waffle div:first-child {
   position: relative;
 }
 
-.vanilla-bean {
+.vanilla-bean div:first-child {
   position: relative;
 }
 
-.tiramisu {
+.tiramisu div:first-child {
   position: relative;
 }
 
-.brownie {
+.brownie div:first-child {
   position: relative;
 }
 
-.cake {
+.cake div:first-child {
   position: relative;
 }
 
-.macaron {
+.macaron div:first-child {
   position: relative;
 }
 
-.pie {
+.pie div:first-child {
   position: relative;
 }
 
-.panna-cotta {
+.panna-cotta div:first-child {
   position: relative;
 }
-.baklava {
+.baklava div:first-child {
   position: relative;
 }
 .waffle img:first-child,
@@ -77,58 +82,21 @@ button#add {
   background-color: white;
 }
 
-.waffle button#add {
-  position: absolute;
-  left: 240px;
-  top: 440px;
-}
-
-.vanilla-bean button#add {
-  position: absolute;
-  left: 240px;
-  top: 440px;
-}
-
-.macaron button#add {
-  position: absolute;
-  left: 240px;
-  top: 440px;
-}
-
-.baklava button#add {
-  position: absolute;
-  left: 240px;
-  top: 440px;
-}
-.pie button#add {
-  position: absolute;
-  left: 240px;
-  top: 440px;
-}
-
-.cake button#add {
-  position: absolute;
-  left: 240px;
-  top: 440px;
-}
-
-.tiramisu button#add {
-  position: absolute;
-  left: 240px;
-  top: 440px;
-}
-
-.brownie button#add {
-  position: absolute;
-  left: 240px;
-  top: 440px;
-}
-
+.waffle button#add,
+.vanilla-bean button#add,
+.macaron button#add,
+.baklava button#add,
+.pie button#add,
+.cake button#add,
+.tiramisu button#add,
+.brownie button#add,
 .panna-cotta button#add {
   position: absolute;
-  left: 240px;
-  top: 440px;
+  left: 50%;
+  bottom: -60px;
+  transform: translateX(-50%);
 }
+
 h3 {
   font-size: 20px;
   opacity: 0.5;
@@ -209,6 +177,11 @@ div.remove {
   justify-content: flex-end;
 }
 
+div.remove img {
+  width: 30px;
+  border: 2px solid #c5694a;
+  border-radius: 50%;
+}
 div.total {
   padding: 35px;
   display: flex;
@@ -256,9 +229,12 @@ div.confirm {
   gap: 30px;
 }
 @media screen and (min-width: 1024px) {
+  body {
+    max-width: 2500px;
+    margin-inline: auto;
+  }
   div.card {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
     gap: 20px;
   }
 
